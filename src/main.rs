@@ -14,7 +14,7 @@ fn main() {
 
         ServeConfig::builder()
             .incremental(render_cfg)
-            .enable_out_of_order_streaming();
+            .enable_out_of_order_streaming()
     };
 
     LaunchBuilder::new()
@@ -33,7 +33,7 @@ enum Route {
 #[component]
 fn Index() -> Element {
     rsx! {
-        p { "This site is a work in progress." }
+        p { "This website is a work-in-progress." }
     }
 }
 
